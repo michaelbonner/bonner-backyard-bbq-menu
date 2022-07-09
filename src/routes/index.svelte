@@ -27,10 +27,6 @@
 				{
 					name: 'Grandma Sycamore',
 					description: ''
-				},
-				{
-					name: 'Chicken Bratwurst',
-					description: ''
 				}
 			]
 		},
