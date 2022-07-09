@@ -72,7 +72,7 @@
 	};
 </script>
 
-<div class="max-w-7xl mx-auto py-12 px-8 grid gap-y-8 md:gap-y-16">
+<div class="max-w-7xl mx-auto py-12 px-8 grid gap-y-8 md:gap-y-16 text-gray-600">
 	<h1 class="text-3xl font-bold underline">Bonners' Backyard BBQ</h1>
 
 	{#each groups as group, groupIndex}
@@ -88,8 +88,10 @@
 				{#each group.items as item, itemIndex}
 					<button
 						on:click={() => makeSelection(groupIndex, itemIndex)}
-						class={`border py-4 px-8 rounded-md hover:bg-red-200 hover:border-red-400 transition-colors ${
-							selections[groupIndex] === item.name ? 'bg-red-100 border-red-300' : 'bg-white'
+						class={`border py-4 px-8 rounded-md hover:bg-red-200 hover:border-red-400 hover:text-red-800 transition-colors ${
+							selections[groupIndex] === item.name
+								? 'bg-red-100 border-red-300 text-red-700'
+								: 'bg-white'
 						}`}
 					>
 						<h3 class="text-xl font-bold">{item.name}</h3>
